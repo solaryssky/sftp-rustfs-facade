@@ -1,0 +1,15 @@
+[package]
+name = "sftp-rustfs-facade"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+aws-sdk-s3 = "1.125.0"
+env_logger = "0.11.9"
+log = "0.4.29"
+percent-encoding = "2.3.2"
+russh = { version = "0.57", features = ["async-trait", "ring"] }
+russh-sftp = "2.1"
+tempfile = "3.26.0"
+tokio = { version = "1.50.0", features = ["full"] }
